@@ -1,0 +1,34 @@
+i {
+  color: red;
+}
+.odd i {
+  text-decoration: underline;
+}
+.links a {
+  text-decoration: none;
+}
+a[href^="http://"]
+{
+  color: red;
+}
+
+a[href^="https://"]
+{
+  color: green;
+}
+.line {
+  text-decoration: underline;
+}
+p span {
+  color: grey;
+}
+b {
+  color: purple;
+  text-decoration: underline;
+}
+.odd .line {
+  color: blue;
+}
+a[href*='.com'] {
+  color: black;
+}
