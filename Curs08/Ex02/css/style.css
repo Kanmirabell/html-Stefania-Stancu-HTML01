@@ -125,3 +125,49 @@ ol a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+
+h1 {
+  color: red;
+  font-family: 'Julius Sans One';
+  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
+    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-size: 35px;
+}
+
+body {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+ul li {
+  font-family: 'Julius Sans One';
+  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
+    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  line-height: 25px;
+}
+
+h2 {
+  color: purple;
+  text-decoration: underline;
+  font-family: 'Julius Sans One';
+  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
+    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-size: 32px;
+}
+
+p {
+  line-height: 23px;
+}
