@@ -1,0 +1,25 @@
+body {
+  color: green;
+}
+a {
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+
+.list > li > li:nth-child(3) {
+  font-size: 200px;
+}
+
+.para-short {
+  width: 321px;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid black;
+}
+.para-short p {
+  width: inherit;
+  text-align: center;
+  border: 1px solid red;
+}
