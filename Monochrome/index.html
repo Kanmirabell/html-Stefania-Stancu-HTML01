@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <div class="header-top">
       <section class="header-social">
         <ul>
@@ -38,7 +38,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Youtube"
-            ><i class="fab fa-youtube"></i></a>
+            ><i class="fab fa-youtube icon"></i></a>
           </li>
           <li>
             <a
@@ -46,7 +46,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Twitter"
-            ><i class="fab fa-twitter-square"></i></a>
+            ><i class="fab fa-twitter-square icon"></i></a>
           </li>
           <li>
             <a
@@ -54,7 +54,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Facebook"
-            ><i class="fab fa-facebook-square"></i></a>
+            ><i class="fab fa-facebook-square icon"></i></a>
           </li>
           <li>
             <a
@@ -62,7 +62,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Instagram"
-            ><i class="fab fa-instagram"></i></a>
+            ><i class="fab fa-instagram icon"></i></a>
           </li>
         </ul>
       </section>
@@ -75,18 +75,21 @@
       </section>
       <!-- ./section-header-contact -->
       <section class="header-search-bar">
-        <form action="">
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search"
-          >
-          <button
-            type="submit"
-            title="Search"
-          ><i class="fas fa-search"></i>Search</button>
-        </form>
+        <div class="searchbar">
+          <form action="">
+            <input
+              class="search-bar"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search "
+            >
+            <button
+              type="submit"
+              class="search-bar"
+            ><i class="fas fa-search"></i></button>
+          </form>
+        </div>
       </section>
       <!--./header-search-bar -->
       <section class="header-controls">
@@ -95,24 +98,25 @@
             <a
               href=""
               title="My Account"
-            ><i class="fas fa-user-alt"></i></a>
+            ><i class="fas fa-user-alt icon"></i></a>
           </li>
           <li>
             <a
               href=""
               title="Wishlist"
-            ><i class="far fa-heart"></i></a>
+            ><i class="far fa-heart icon heart"></i></a>
           </li>
           <li>
             <a
               href=""
               title="Shopping bag"
-            ><i class="fas fa-shopping-bag"></i></a>
+            ><i class="fas fa-shopping-bag icon"></i></a>
           </li>
         </ul>
 
       </section>
       <!-- ./section-header-controls -->
+    </div>
     </div>
     <!-- ./div-header-top -->
     <div class="header-bottom">
@@ -163,440 +167,450 @@
   <!-- ./header -->
 
   <main class="content">
-    <section class="catalog-preview">
-      <header class="content-header">
-        <h1>New Stuff</h1>
-      </header>
-      <!-- ./content-header -->
-      <main class="product-tiles">
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.1.jpg"
-                  alt="watch1"
+    <div class="main-content container">
+      <section class="catalog-preview">
+        <header class="content-header">
+          <h1>New Stuff</h1>
+        </header>
+        <!-- ./content-header -->
+        <main class="product-tiles">
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.2.jpg"
-                  alt="watch1"
+                  <img
+                    src="images/watch.1.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.2.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.3.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./footer-product-tile -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.3.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./footer-product-tile -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.4.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-      </main>
-      <!-- ./product-tiles -->
-    </section>
-    <!-- ./section-catalog-preview -->
-    <section class="catalog-preview">
-      <header class="content-header">
-        <h1>Most Loved</h1>
-      </header>
-      <!-- ./content-header -->
-      <main class="product-tiles">
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.5.jpg"
-                  alt="watch1"
+                  <img
+                    src="images/watch.4.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+        </main>
+        <!-- ./product-tiles -->
+      </section>
+      <!-- ./section-catalog-preview -->
+      <section class="catalog-preview">
+        <header class="content-header">
+          <h1>Most Loved</h1>
+        </header>
+        <!-- ./content-header -->
+        <main class="product-tiles">
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.6.jpg"
-                  alt="watch1"
+                  <img
+                    src="images/watch.5.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.6.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.7.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.7.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.8.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-      </main>
-      <!-- ./product-tiles -->
-    </section>
-    <!-- ./section-catalog-preview -->
-    <section class="product-description-details">
-      <h1>Watches for entrepreneurs</h1>
-      <picture class="suggestion-product-display">
-        <img
-          src="images/phone-watch-display.jpg"
-          alt="product-display"
-        >
-      </picture>
-      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
-        praising pain was born and I will give you a complete account of the system, and expound the actual teachings of
-        the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes,
-        or avoids pleasure itself, because.</p>
-      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
-        praising pain was born and I will give you a complete account of the system, and expound the actual
-        teachings of the great explorer of the truth, the master-builder of human
-        happiness. No one rejects, dislikes, or avoids pleasure itself, because.</p>
-    </section>
-    <!-- ./section-product-description-details -->
-    <section class="catalog-preview">
-      <header class="content-header">
-        <h1>Men`s</h1>
-      </header>
-      <!-- ./content-header -->
-      <main class="product-tiles">
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.9.jpg"
-                  alt="watch1"
-                >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.10.jpg"
-                  alt="watch1"
-                >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.8.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+        </main>
+        <!-- ./product-tiles -->
+      </section>
+      <!-- ./section-catalog-preview -->
+      <section class="product-description-details">
+        <div class="product-description-info">
+          <picture class="suggestion-product-display">
+            <img
+              src="images/phone-watch-display.jpg"
+              alt="product-display"
+            >
+          </picture>
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.11.jpg"
-                  alt="watch1"
+          <div class="product-description-info-text">
+            <h1>Watches for entrepreneurs</h1>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and <br>
+              praising pain was born and I will give you a complete account of the system, and <br> expound the actual
+              teachings
+              of
+              the great explorer of the truth, the master-builder <br> of human happiness. No one rejects, dislikes,
+              or avoids pleasure itself, because. <br><br>
+              But I must explain to you how all this mistaken idea of denouncing pleasure and <br>
+              praising pain was born and I will give you a complete account of the system, and <br> expound the actual
+              teachings of the great explorer of the truth, the master-builder <br> of human
+              happiness. No one rejects, dislikes, or avoids pleasure itself, because.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ./section-product-description-details -->
+      <section class="catalog-preview">
+        <header class="content-header">
+          <h1>Men`s</h1>
+        </header>
+        <!-- ./content-header -->
+        <main class="product-tiles">
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.9.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watch.10.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.12.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.11.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watch.12.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+        </main>
+        <!-- ./product-tiles -->
         <footer class="cta">
           <button class="cta">
             <a
@@ -606,146 +620,147 @@
           </button>
         </footer>
         <!-- ./footer-cta -->
-      </main>
-      <!-- ./product-tiles -->
-    </section>
-    <!-- ./section-catalog-preview -->
-    <section class="catalog-preview">
-      <header class="content-header">
-        <h1>Women`s</h1>
-      </header>
-      <!-- ./content-header -->
-      <main class="product-tiles">
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.13.jpg"
-                  alt="watch1"
-                >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.14.jpg"
-                  alt="watch1"
-                >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.15.jpg"
-                  alt="watch1"
+      </section>
+      <!-- ./section-catalog-preview -->
+      <section class="catalog-preview">
+        <header class="content-header">
+          <h1>Women`s</h1>
+        </header>
+        <!-- ./content-header -->
+        <main class="product-tiles">
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.13.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watch.14.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
 
-        <article class="product-tile">
-          <main class="product-tile-image-container">
-            <picture class="product-tile-image">
-              <a
-                href=""
-                title="Monochrome"
-              >
-                <img
-                  src="images/watch.16.jpg"
-                  alt="watch1"
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
                 >
-              </a>
-              <a
-                href="Wishlist"
-                title="Wishlist"
-              ><i class="far fa-heart"></i></a>
-            </picture>
-          </main>
-          <!-- ./main-product-tile-image-container -->
-          <header class="product-tile-details">
-            <h1 class="product-title">
-              <a
-                href=""
-                title="Monochrome"
-              >Monochrome</a>
-            </h1>
-            <div class="product-price">$425</div>
-            <!-- ./div-product-price -->
-          </header>
-          <!-- ./header-product-tile-detail -->
-        </article>
-        <!-- ./article-product tiles -->
+                  <img
+                    src="images/watch.15.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+
+          <article class="product-tile">
+            <main class="product-tile-image-container">
+              <picture class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watch.16.jpg"
+                    alt="watch1"
+                  >
+                </a>
+                <a
+                  href="Wishlist"
+                  title="Wishlist"
+                ><i class="far fa-heart icon"></i></a>
+              </picture>
+            </main>
+            <!-- ./main-product-tile-image-container -->
+            <header class="product-tile-details">
+              <h1 class="product-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+              <div class="product-price">$425</div>
+              <!-- ./div-product-price -->
+            </header>
+            <!-- ./header-product-tile-detail -->
+          </article>
+          <!-- ./article-product tiles -->
+        </main>
+        <!-- ./product-tiles -->
         <footer class="cta">
           <button class="cta">
             <a
@@ -755,128 +770,130 @@
           </button>
         </footer>
         <!-- ./footer-cta -->
-      </main>
-      <!-- ./product-tiles -->
-    </section>
-    <!-- ./section-catalog-preview -->
+
+      </section>
+      <!-- ./section-catalog-preview -->
+    </div>
   </main>
   <!-- ./main-content -->
 
-  <footer class="footer">
+  <footer class="footer container">
+
     <section class="footer-main">
-      <nav class="footer-contact">
-        <ul>
-          <li>
-            <a
-              href="tel:+44 (0)10 2345 6789"
-              title="CALL US +44 (0)10 2345 6789"
-            >CALL US +44 (0)10 2345 6789</a>
-          </li>
-          <li>
-            <a href="EMAIL CUSTOMER CARE">EMAIL CUSTOMER CARE</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- ./footer-contact -->
-      <nav class="footer-nav">
-        <ul>
-          <li> <a
-              href=""
-              title="STYLE & FIT ADVICE"
-            >STYLE & FIT ADVICE</a></li>
-          <li> <a
-              href=""
-              title="FAQS"
-            >FAQS</a></li>
-          <li> <a
-              href=""
-              title="DELIVERY"
-            >DELIVERY</a></li>
-          <li> <a
-              href=""
-              title="EXCHANGES & RETURNS"
-            >EXCHANGES & RETURNS</a></li>
-        </ul>
-        <ul>
-          <li><a
-              href=""
-              title="ABOUT US"
-            >ABOUT US</a></li>
-          <li><a
-              href=""
-              title="CAREERS"
-            >CAREERS</a></li>
-          <li><a
-              href=""
-              title="AFFILIATES"
-            >AFFILIATES</a></li>
-          <li><a
-              href=""
-              title="ADVERTISING"
-            >ADVERTISING</a></li>
-        </ul>
-      </nav>
-      <!-- ./footer-nav -->
+      <div class="footer-main-box">
+        <nav class="footer-contact">
+          <ul>
+            <li>
+              <a
+                href="tel:+44 (0)10 2345 6789"
+                title="CALL US +44 (0)10 2345 6789"
+              >CALL US <br>+44 (0)10 2345 6789</a>
+            </li>
+            <li>
+              <a href="EMAIL CUSTOMER CARE">EMAIL CUSTOMER CARE</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ./footer-contact -->
+        <nav class="footer-nav">
+          <ul>
+            <li> <a
+                href=""
+                title="STYLE & FIT ADVICE"
+              >STYLE & FIT ADVICE</a></li>
+            <li> <a
+                href=""
+                title="FAQS"
+              >FAQS</a></li>
+            <li> <a
+                href=""
+                title="DELIVERY"
+              >DELIVERY</a></li>
+            <li> <a
+                href=""
+                title="EXCHANGES & RETURNS"
+              >EXCHANGES & RETURNS</a></li>
+          </ul>
+          <ul>
+            <li><a
+                href=""
+                title="ABOUT US"
+              >ABOUT US</a></li>
+            <li><a
+                href=""
+                title="CAREERS"
+              >CAREERS</a></li>
+            <li><a
+                href=""
+                title="AFFILIATES"
+              >AFFILIATES</a></li>
+            <li><a
+                href=""
+                title="ADVERTISING"
+              >ADVERTISING</a></li>
+          </ul>
+        </nav>
+        <!-- ./footer-nav -->
 
-      <section class="footer-newsletter-cta">
-        <form>
-          <label
-            for="register"
-            title="SIGN UP FOR OUR NEWSLETTER"
-          >SIGN UP FOR OUR NEWSLETTER</label>
-          <input
-            type="text"
-            name="register"
-            id="register"
-          >
-          <button
-            type="submit"
-            title="Submit"
-          >Submit</button>
-        </form>
-      </section>
-      <!-- ./section-footer-newsletter-cta -->
+        <section class="footer-newsletter-cta">
+          <form>
+            <label
+              for="register"
+              title="SIGN UP FOR OUR NEWSLETTER"
+            >SIGN UP FOR OUR NEWSLETTER</label>
+            <input
+              type="text"
+              name="register"
+              id="register"
+            >
+            <button
+              type="submit"
+              title="Submit"
+            >Submit</button>
+          </form>
+        </section>
+        <!-- ./section-footer-newsletter-cta -->
 
-      <section class="footer-social-media-controls">
-        <ul>
-          <li>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Youtube"
-            ><i class="fab fa-youtube"></i></a>
-          </li>
-          <li>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Twitter"
-            ><i class="fab fa-twitter-square"></i></a>
-          </li>
-          <li>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Facebook"
-            ><i class="fab fa-facebook-square"></i></a>
-          </li>
-          <li>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Instagram"
-            ><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
-      </section>
-      <!-- ./footer-social-media-controls -->
+        <section class="footer-social-media-controls">
+          <ul>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Youtube"
+              ><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Twitter"
+              ><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+              ><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+              ><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </section>
+        <!-- ./footer-social-media-controls -->
+      </div>
     </section>
     <!-- ./section-footer-main -->
-
   </footer>
   <!-- ./footer -->
 </body>
